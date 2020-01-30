@@ -2,10 +2,10 @@ import React from 'react';
 import './ListItem.css';
 
 //poti sa scrii stiluri ca in html cu css normal, doar ca in react sunt obiecte si nu mai ai px (pixeli) ci valori intregi - vezi exemplul de mai jos
-const movieImageStyle= {
-  'width': 300,
-  'height': 400
-}
+// const movieImageStyle= {
+//   'width': 300,
+//   'height': 400, 
+// }
 
 
 class ListItem extends React.Component {
@@ -25,8 +25,8 @@ class ListItem extends React.Component {
           {movie.title}
         </div>
 
-        <img 
-          style={movieImageStyle}
+        <img className="flex-item" 
+          // style={movieImageStyle}
           src={movie.imageSource} 
           alt={movie.title}
           />
